@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Conversor de Monedas</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Conversor de Peso Chileno</h1>
+    </header>
+    <div class="contenedor">
+        <h2 class="subtitulo">Monto CLP</h2>
+        <input type="number" name="montoCLP" id="pesoCLP" placeholder="Ingrese el monto"><br>
+        <h2>Que moneda quieres</h2>
+        <select name="moneda" id="opciones">
+            <option value="elige una moneda">Elige una moneda</option>
+            <option class="euro" value="euro">Euro</option>
+            <option class="dolar" value="dolar">Dolar</option>
+            <option class="bitcoin" value="bitcoin">Bitcoin</option>
+        </select>
+        <button id="btnBuscar">Buscar</button>
+        <p class="resultado"></p>
+        <p class="error"></p>
+    </div>
+    <div class="grafico">
+        <canvas id="myChart"></canvas>
+    </div>
+    <script type="module" src="./assets/js/script.js"></script>
+</body>
+
+</html>
